@@ -45,7 +45,7 @@ xhr.onreadystatechange = function () {
                             var ael = document.createElement('a');
                             ael.innerHTML = glasses.url;
                             ael.href = glasses.url; 
-                            ael.text = "Ссылка на странцу на сайте"
+                            ael.text = "Странца на сайте"
                             document.getElementById("url").appendChild(ael);
            
                         });
