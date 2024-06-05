@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "CrimsonText-Regular";
+    src: url("../fonts/CrimsonText-Regular.ttf");
+}
+
+body {
+    background-color: #E8EDE7;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.name_text {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_part {
+    background-color: white;
+    font-family: "CrimsonText-Regular";
+    color: #012E4A;
+    border-radius: 15px;
+    padding: 10px 50px 20px;
+    width: 300px;
+}
+
+.color_class {
+    height: 700px;
+    width: 500px;
+    background-color: #81BECE;
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    text-align: left;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    max-height: 500px; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+}
+
+.a {
+    height: 100px;
+    width: 700px;
+    position: center;
+    background-color: brown;
+    white-space: nowrap;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b {
+    position: center;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+}
+
+.little_color {
+    height: 15px;
+    width: 15px;
+    background-color: #E8EDE7;
+    padding: 2px 2px 2px;
+    border-radius: 4px;
+    margin-right: 10px
+}
+
+
+img.little_color {
+    border-radius: 6px;
+    padding: 2px 2px 2px;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.container {
+    color: #012E4A;
+    height: 700px;
+    width: 600px;
+    position: relative;
+    float: left;
+    background-color: #378BA4;
+    margin-top: 30px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    text-align: left;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    max-height: 500px; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+}
+
+.box {
+    /*position: absolute;
+    padding: 10px 20px 20px 20px;
+    font-size: 15px;
+    display: inline-block;*/
+    display: flex;
+    flex-direction: column; /* Располагает дочерние элементы вертикально */
+    justify-content: center; /* Выравнивает дочерние элементы по вертикали */
+    align-items: center; /* Выравнивает дочерние элементы по горизонтали */
+    padding: 20px; /* Опционально: Добавьте отступы для внутреннего пространства */
+    
+    
+}
+
+.box_el {
+    font-family: "CrimsonText-Regular";
+    position: absolute;
+    padding: 0;
+    font-size: 15px;
+}
+
+
+.clickable {
+    width: 500px;
+    display: flex;
+    background-color: #E8EDE7;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
