@@ -1,4 +1,14 @@
-ï»¿<?php require_once "indexx.php";?>
+<?php
+    require('D:\Ampps\www\indexx.php');
+    $pdo->exec("set names utf8");
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['query'])){
+        $post = search($_POST['query'], 'glss');
+
+}
+
+?>
+
+
 <!doctype html>
 <html lang="ru">
 <head>
@@ -49,10 +59,10 @@
         </div>
         <div style="flex: 1;">
             <div class="inpt">
-                <form name="search_form" method="post" action="search.php" class="search_form">
+                <form name="search" method="post" action="search.php" class="search_form">
                     <input class="input_spot" type="search" name="query" placeholder="Search">
                     <button type="submit" class="button">
-                        <img src="img/free-icon-find-14141822.png" alt="ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð¸ÐºÐ¾Ð½ÐºÐ¸" height="14" width="14" style="margin-top: 2px; margin-left: 0px;">
+                        <img src="img/free-icon-find-14141822.png" alt="Îïèñàíèå èêîíêè" height="14" width="14" style="margin-top: 2px;">
                     </button>
                 </form>
             </div>
@@ -60,7 +70,7 @@
 
                 <div class="box_el">
                     <ul>
-                        <?php foreach($data as $d): ?>
+                        <?php foreach($post as $d): ?>
                         <li>
                             <div id="<?= $d['id']?>" class="clickable">
                                 <div class="little_color"></div>

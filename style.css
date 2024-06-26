@@ -26,8 +26,14 @@ ul {
     width: 300px;
 }
 
+.search_form {
+    display: flex;
+    align-items: center;
+}
+
+
 .color_class {
-    height: 700px;
+    height: 720px;
     width: 500px;
     background-color: #81BECE;
     position: relative;
@@ -81,16 +87,49 @@ img.displayed {
     margin-right: auto;
     width: 400px;
     border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.inpt {
+    margin-top: 23px;
+    margin-bottom: 4px;
+    height: 35px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: #036280;
+    display: flex;
+    padding: 4px 0; /* Равные отступы сверху и снизу */
+}
+
+.button {
+    width: 30px;
+    height: 23px;
+    background-color: #E8EDE7;
+    border-radius: 4px 10px 10px 4px;
+}
+
+.input_spot {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 4px;
+    width: 530px;
+    height: 20px;
+    background-color: #E8EDE7;
+    border-radius: 10px 4px 4px 10px;
+    padding: 10px;
+    margin-right: 2px;
 }
 
 .container {
     color: #012E4A;
-    height: 700px;
+    height: 462px;
     width: 600px;
     position: relative;
     float: left;
     background-color: #378BA4;
-    margin-top: 30px;
     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     text-align: left;
     border-radius: 4px;
@@ -101,17 +140,11 @@ img.displayed {
 }
 
 .box {
-    /*position: absolute;
-    padding: 10px 20px 20px 20px;
-    font-size: 15px;
-    display: inline-block;*/
     display: flex;
     flex-direction: column; /* Располагает дочерние элементы вертикально */
     justify-content: center; /* Выравнивает дочерние элементы по вертикали */
     align-items: center; /* Выравнивает дочерние элементы по горизонтали */
     padding: 20px; /* Опционально: Добавьте отступы для внутреннего пространства */
-    
-    
 }
 
 .box_el {

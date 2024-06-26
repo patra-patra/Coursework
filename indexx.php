@@ -20,6 +20,24 @@ function getAll($table){
 	return $query->fetchAll();
 }
 
+function search($text, $table){
+    global $pdo;
+
+    $sql = "SELECT * FROM $table WHERE name LIKE :query OR brand LIKE :query";
+    $stmt = $pdo->prepare($sql);
+    $query = '%' . $text . '%';
+    $stmt->bindParam(':query', $query, PDO::PARAM_STR);
+    $stmt->execute();
+
+    $error_info = $stmt->errorInfo();
+    if ($error_info[0] !== PDO::ERR_NONE) {
+        echo $error_info[2];
+        exit();
+    }
+
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 $data = getAll('glss');
 $json_data = json_encode($data);
 

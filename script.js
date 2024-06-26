@@ -22,13 +22,7 @@ xhr.onreadystatechange = function () {
                         }
                         else {
                             element.getElementsByTagName('div')[0].style.backgroundImage = "url(img/more_than_one_color.png)";
-
-                            /*image = document.createElement('img');
-                            image.src = "img/more_than_one_color.png";
-                            image.className = "little_color";
-                            element.getElementsByTagName('div')[0].appendChild(image);*/
                         }
-            
                         element.addEventListener("click", function () {
                             document.getElementById("url").innerHTML = "";
 
@@ -47,7 +41,6 @@ xhr.onreadystatechange = function () {
                             ael.href = glasses.url; 
                             ael.text = "Странца на сайте"
                             document.getElementById("url").appendChild(ael);
-           
                         });
                     }
                 });
